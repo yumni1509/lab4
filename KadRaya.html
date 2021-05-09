@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+body {
+    background-image: url("api3.gif");
+    background-position: center;
+    background-repeat: repeat; 
+   
+    position: relative;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.p1 {
+    color: greenyellow;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p2 {
+    color: greenyellow;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p3 {
+    color: greenyellow;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {  
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+  width: 300px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="color:white">Selamat Hari Raya Aidilfitri</h1>
+
+
+<div class="raya">
+    <img src="raya.jpg" style="width:25%;">
+</div>
+
+<div class="p1">
+<p onclick="myFunction(this, 'red')">Dengan tulus ikhlas saya mohon ampun dan maaf</p>
+<p onclick="myFunction(this, 'red')">Andai ada sebarang kesilapan lalu</p>
+<p onclick="myFunction(this, 'red')">yang mengguris hati...</p>
+</div><br>
+
+<div class="p2">
+    <p onclick="myFunction(this, 'blue')">Tiada perkara yang lebih bermakna</p>
+    <p onclick="myFunction(this, 'blue')">selain mendapat kemaafan daripada anda.</p>
+    <p onclick="myFunction(this, 'blue')">Semoga Syawal kali ini kita semua beroleh</p>
+    <p onclick="myFunction(this, 'blue')">Rahmat dan Nikmat daripada Yang Maha Esa...</p>
+</div><br>
+
+<div class="p3">
+    <p onclick="myFunction(this, 'yellow')">Gemersik takbir mengundang hiba,</p>
+    <p onclick="myFunction(this, 'yellow')">Salam diutus tanda ingatan,</p>
+    <p onclick="myFunction(this, 'yellow')">Syawal dinanti menjelang tiba,</p>
+    <p onclick="myFunction(this, 'yellow')">Salam diutus pohon kemaafan...</p>
+</div>
+
+<audio controls autoplay>
+    <source src="lagu.mp3" type="audio/ogg">
+    <source src="lagu.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+<script>
+    function myFunction(elmnt,clr) {
+      elmnt.style.color = clr;
+    }
+</script>
+
+</body>
+</html>
